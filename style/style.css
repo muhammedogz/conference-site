@@ -170,3 +170,49 @@ main {
 
 	margin: 0 1em;
 }
+
+.event-speakers {
+	height: 80vh;
+
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid green;
+}
+
+.event-speakers .speakers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+
+	border: 1px solid rebeccapurple;
+}
+
+.event-speakers .speakers .speaker {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.event-speakers .speakers .speaker img {
+	border-radius: 1.1em;
+}
+
+.event-speakers .speakers .speaker p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #feb80842;
+	border-bottom-left-radius: 1.1em;
+	border-bottom-right-radius: 1.1em;
+
+	padding-block: 0.3em;
+	margin-top: -1.7em;
+}
