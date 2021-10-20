@@ -1,7 +1,7 @@
 :root {
 	--color-orange: #feba08;
 	--color-black: #121212;
-	--color-nav: #12121259;
+	--color-nav: #12121267;
 	--color-white: #ffffff;
 }
 
@@ -13,7 +13,7 @@
 
 html {
 	scroll-behavior: smooth;
-	/* scroll-padding-top: 7em; */
+	scroll-padding-top: 7em;
 }
 
 body {
@@ -53,9 +53,13 @@ img {
 nav {
 	position: fixed;
 	top: 0;
-	background-color: var(--color-nav);
-	padding-bottom: 2em;
+	left: 0;
+	right: 0;
+
 	width: 90%;
+	margin: auto;
+
+	background-color: var(--color-nav);
 
 	display: flex;
 	justify-content: space-between;
@@ -112,4 +116,30 @@ nav ul li {
 	padding: 0.7em 1.2em;
 	background-color: var(--color-orange);
 	color: var(--color-black);
+}
+
+/* main */
+
+main {
+	margin-top: 3.2em;
+
+	border: 2px solid blue;
+}
+
+/* hero */
+
+.event-hero {
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	background-image: url("../images/background/background-hero.jpg");
+	background-color: rgba(0, 0, 0, 0.329);
+	background-size: 70%;
+	background-position: center center;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
 }
