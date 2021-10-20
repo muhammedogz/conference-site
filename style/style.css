@@ -38,6 +38,7 @@ img {
 
 .container {
 	width: 90%;
+	max-width: 1300px;
 	margin: auto;
 }
 
@@ -257,6 +258,7 @@ footer a {
 
 .copyright-section div {
 	width: 90%;
+	max-width: 1300px;
 	margin: auto;
 	font-size: 0.7rem;
 	display: flex;
