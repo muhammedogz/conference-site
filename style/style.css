@@ -1,11 +1,19 @@
 :root {
 	--color-orange: #feba08;
 	--color-black: #121212;
+	--color-nav: #12121259;
 	--color-white: #ffffff;
 }
 
-* {
+*,
+*::after,
+*::before {
 	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	/* scroll-padding-top: 7em; */
 }
 
 body {
@@ -38,10 +46,17 @@ img {
 /* logo */
 
 .logo {
+	font-weight: 700;
 	color: var(--color-orange);
 }
 
 nav {
+	position: fixed;
+	top: 0;
+	background-color: var(--color-nav);
+	padding-bottom: 2em;
+	width: 90%;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
@@ -56,8 +71,13 @@ nav a {
 
 nav a:hover,
 nav a:active {
-	border-bottom: 1px solid var(--color-orange);
-	background-color: #feb80849;
+	color: var(--color-orange);
+	padding-bottom: 0.3em;
+	border-bottom: 2px solid var(--color-orange);
+}
+
+.active-link {
+	color: var(--color-orange);
 }
 
 nav ul {
@@ -72,9 +92,14 @@ nav ul {
 
 nav ul li {
 	margin: 0 1em;
+	font-weight: 400;
 }
 
 .buy-ticket {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	border: 1px solid var(--color-orange);
 	padding: 0.7em 1.2em;
 
@@ -84,6 +109,7 @@ nav ul li {
 
 .buy-ticket:hover,
 .buy-ticket:active {
+	padding: 0.7em 1.2em;
 	background-color: var(--color-orange);
 	color: var(--color-black);
 }
