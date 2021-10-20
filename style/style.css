@@ -1,7 +1,89 @@
+:root {
+	--color-orange: #feba08;
+	--color-black: #121212;
+	--color-white: #ffffff;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	font-family: "Poppins", sans-serif;
+
+	color: var(--color-white);
+
+	background-image: url("../images/background/background-main.jpg");
+	background-size: cover;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+/* typography */
+
+/* layout */
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+/* header */
+
+/* nav */
+
+/* logo */
+
+.logo {
+	color: var(--color-orange);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: inherit;
+}
+
+nav a:hover,
+nav a:active {
+	border-bottom: 1px solid var(--color-orange);
+	background-color: #feb80849;
+}
+
+nav ul {
+	margin: 0;
+	padding: 1em;
+	list-style: none;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+nav ul li {
+	margin: 0 1em;
+}
+
+.buy-ticket {
+	border: 1px solid var(--color-orange);
+	padding: 0.7em 1.2em;
+
+	background-color: var(--color-black);
+	transition: all 250ms ease-in-out;
+}
+
+.buy-ticket:hover,
+.buy-ticket:active {
+	background-color: var(--color-orange);
+	color: var(--color-black);
 }
