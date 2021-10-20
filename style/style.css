@@ -239,3 +239,30 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+/* footer */
+
+footer a {
+	text-decoration: none;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright-section {
+	background-color: var(--color-orange);
+}
+
+.copyright-section div {
+	width: 90%;
+	margin: auto;
+	font-size: 0.7rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.terms {
+	color: var(--color-black);
+}
