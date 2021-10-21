@@ -74,6 +74,13 @@ li {
 	color: var(--color-orange);
 }
 
+.logo-mobile {
+	font-weight: 700;
+	font-size: 2em;
+	text-align: center;
+	color: var(--color-orange);
+}
+
 nav {
 	top: 0;
 	left: 0;
@@ -349,6 +356,10 @@ footer a {
 /* media */
 
 @media (min-width: 640px) {
+	.logo-mobile {
+		display: none;
+	}
+
 	nav {
 		position: fixed;
 
