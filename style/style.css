@@ -16,7 +16,7 @@
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 7em;
+	scroll-padding-top: 4em;
 }
 
 body {
@@ -258,7 +258,7 @@ main {
 	display: flex;
 	flex-direction: column;
 
-	margin: 3em 0;
+	padding: 3em 0;
 
 	text-align: center;
 	justify-content: flex-start;
@@ -381,8 +381,13 @@ footer a {
 	}
 
 	.nav-mobile {
-		position: initial;
-		width: initial;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: initial;
+
+		margin: auto;
+		width: 90%;
 		height: initial;
 	}
 
