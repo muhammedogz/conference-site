@@ -5,6 +5,7 @@
 
 	--color-nav: #12121267;
 	--color-main: rgba(0, 0, 0, 0.425);
+	--color-nav-mobil: #121212d0;
 }
 
 *,
@@ -48,6 +49,7 @@ h2 {
 	text-align: center;
 }
 
+h3,
 p,
 li {
 	font-size: clamp(1rem, 1vw + 0.2rem, 1.35rem);
@@ -87,7 +89,7 @@ nav {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -147,31 +149,36 @@ nav ul li {
 /* mobile nav */
 
 .nav-mobile {
-	background-color: #000;
+	background-color: var(--color-nav-mobil);
 	position: fixed;
-	width: 100%;
-	top: 0;
+	width: 50%;
+	height: 55%;
+	top: -25%;
 	right: 0;
-	bottom: 0;
-	left: -100%;
+	bottom: 20%;
+	left: -150%;
+
 	transform: translateX(0);
-	transition: transform 250ms;
+	transition: transform 350ms;
 }
 
 .nav-mobile-closed {
-	transform: translateX(50%);
+	transform: translateX(100%);
 }
 
 .close-nav-btn {
-	background-color: #000;
-	color: #ffe600;
+	position: fixed;
+	background-color: var(--color-nav-mobil);
+	color: var(--color-orange);
+
 	border: none;
 	align-self: flex-end;
+
 	cursor: pointer;
-	font-size: 3rem;
+	font-size: 2rem;
 	padding: 0.1em;
+
 	margin-top: 0.15em;
-	position: absolute;
 	z-index: 1;
 	opacity: 0.8;
 	top: 0;
@@ -346,6 +353,7 @@ footer a {
 		position: fixed;
 
 		flex-direction: row;
+		justify-content: space-between;
 		align-items: baseline;
 	}
 
@@ -359,6 +367,16 @@ footer a {
 	nav ul li {
 		margin: 0 0.3em;
 		font-weight: 400;
+	}
+
+	.nav-mobile {
+		position: initial;
+		width: initial;
+		height: initial;
+	}
+
+	.nav-mobile-closed {
+		transform: initial;
 	}
 
 	.close-nav-btn {
