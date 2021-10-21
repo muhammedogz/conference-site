@@ -165,28 +165,36 @@ main {
 	background-repeat: no-repeat;
 }
 
+/* event timer */
+
 .event-timer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-
-	height: 50vh;
 }
 
 .event-timer .times {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	font-size: 3em;
 }
 
 .event-timer .time {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	flex-direction: column;
 
-	margin: 0 1em;
+	margin: 0 0.3em;
+}
+
+.event-timer .times .values {
+	margin: 0;
+	font-size: 1em;
 }
 
 /* speakers section */
@@ -196,7 +204,6 @@ main {
 	flex-direction: column;
 
 	margin: 3em 0;
-	border: 2px solid blue;
 
 	text-align: center;
 	justify-content: flex-start;
@@ -211,7 +218,7 @@ main {
 }
 
 .section-container div div {
-	width: 20%;
+	width: 30%;
 	max-width: 220px;
 	display: flex;
 	flex-direction: column;
@@ -238,7 +245,16 @@ main {
 /* sponsors section */
 /* section container applied */
 
+.event-sponsors .sponsors .sponsor {
+	/* change sponsor images */
+	width: 15%;
+}
+
 /* footer */
+
+footer {
+	margin: 2em 0;
+}
 
 footer a {
 	text-decoration: none;
@@ -247,6 +263,25 @@ footer a {
 .footer {
 	display: flex;
 	justify-content: space-between;
+}
+
+.social-media {
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-media a {
+	margin: 0 0.4em;
+	transition: all 250ms ease-in-out;
+}
+
+.social-media a:hover,
+.social-media a:focus {
+	border: 2px solid var(--color-orange);
 }
 
 .copyright-section {
