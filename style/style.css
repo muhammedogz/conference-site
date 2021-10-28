@@ -180,7 +180,7 @@ nav ul li {
 
 .close-nav-btn {
 	position: fixed;
-	background-color: gray;
+	background-color: rgba(128, 128, 128, 0);
 	color: var(--color-orange);
 
 	border: none;
