@@ -1,8 +1,6 @@
 const nav = document.querySelector("nav");
 const button = document.querySelector(".close-nav-btn");
 
-
-
 button.addEventListener('click', () => {
     if (nav.classList.contains("nav-mobile-closed"))
     {
@@ -18,3 +16,12 @@ button.addEventListener('click', () => {
     }
 });
 
+document.addEventListener("click", (event) => {
+    
+    if (event.target != button)
+    {
+        console.log("window section");
+        nav.classList.remove("nav-mobile-closed");
+        button.classList.remove("fixed");
+    }
+});
