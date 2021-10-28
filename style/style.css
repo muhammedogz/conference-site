@@ -373,7 +373,7 @@ footer a {
 
 	nav {
 		position: fixed;
-
+		padding: 0.1em 0;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: baseline;
@@ -382,7 +382,7 @@ footer a {
 	nav ul {
 		width: 90%;
 		max-width: 800px;
-		margin: auto;
+		margin: 0 auto;
 		flex-direction: row;
 	}
 
