@@ -12,7 +12,7 @@
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
 
-        eventDay = "11/23/2021";
+        eventDay = "8/10/2022";
     
     today = mm + "/" + dd + "/" + yyyy;
     //end
