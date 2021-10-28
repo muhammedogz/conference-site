@@ -260,7 +260,7 @@ main {
 	font-size: 1em;
 }
 
-/* speakers section */
+/* general section configuration */
 
 .section-container {
 	display: flex;
@@ -292,11 +292,13 @@ main {
 	justify-content: space-between;
 }
 
-.event-speakers .speakers .speaker img {
+/* event events section */
+
+.event-events .events .event img {
 	border-radius: 1.1em;
 }
 
-.event-speakers .speakers .speaker p {
+.event-events .events .event p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
