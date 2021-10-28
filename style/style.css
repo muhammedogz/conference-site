@@ -226,6 +226,30 @@ main {
 	background-repeat: no-repeat;
 }
 
+/* about section */
+
+.about {
+	height: 50vh;
+	padding: 1em;
+
+	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about h2 {
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.about-info {
+	width: 80%;
+	margin: auto;
+}
+
 /* event timer */
 
 .event-timer {
