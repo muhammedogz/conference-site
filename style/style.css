@@ -380,14 +380,14 @@ footer a {
 	}
 
 	nav ul {
-		width: 100%;
-		max-width: 500px;
+		width: 90%;
+		max-width: 800px;
+		margin: auto;
 		flex-direction: row;
-		justify-content: space-between;
 	}
 
 	nav ul li {
-		margin: 0 0.3em;
+		margin: 0;
 		font-weight: 400;
 	}
 
